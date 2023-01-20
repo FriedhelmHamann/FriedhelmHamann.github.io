@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Friedhelm Hamann"
-  avatar           : "profile.png"
+  avatar           : "fh.jpeg"
   bio              : "PhD Student @ TU Berlin | Robotic Perception"
   location         : "Berlin"
   employer         :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "friedhelm_h"
+  twitter          : "twitter.com/friedhelm_h"
   vine             :
   weibo            :
   xing             :
