@@ -19,29 +19,18 @@ News
 
 Publications
 ======
-Hamann, and Gallego, Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras. 26th Int. Conf. Pattern Recognition (ICPR), Visual observation and analysis, 2022. [Pdf]([https://homepages.inf.ed.ac.uk/rbf/vaib22.html](https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf)) 
 
-<table>
+
+<table border="0">
   <tr>
     <td>
       <img src="../images/icprw22.jpg" width="100"/>
     </td>
     <td>
-      **Title:** Title of Publication 1<br/>
-      **Author:** Author of Publication 1<br/>
-      **Publisher:** Publisher of Publication 1<br/>
-      **Year:** Year of Publication 1
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="../images/icprw22.jpg" width="100"/>
-    </td>
-    <td>
-      **Title:** Title of Publication 2<br/>
-      **Author:** Author of Publication 2<br/>
-      **Publisher:** Publisher of Publication 2<br/>
-      **Year:** Year of Publication 2
+      Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras.<br/>
+      Hamann, F., & Gallego, G.<br/>
+      26th Int. Conf. Pattern Recognition (ICPRW), Visual observation and analysis<br/>
+      2022 <a href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf">Pdf</a>
     </td>
   </tr>
 </table>
