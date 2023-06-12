@@ -14,8 +14,8 @@ I am working with event cameras, novel, bio-inspired vision sensors that output 
 
 My goal is to design algorithms that leverage the properties of event cameras to solve different computer vision tasks. As part of the cluster of excellence ["Science of Intelligence"](https://www.scienceofintelligence.de/) I work with biologists and neuroscientists, to build event-based tools for animal behavior observation.
 
-News
-======
+<!-- News -->
+<!-- ====== -->
 
 Publications
 ======
@@ -35,5 +35,5 @@ Publications
   </tr>
 </table>
 
-Projects
-======
+<!-- Projects -->
+<!-- ====== -->
