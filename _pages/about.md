@@ -24,7 +24,7 @@ Publications
 <table border="0">
   <tr>
     <td>
-      <img src="../images/icprw22.jpg" width="100"/>
+      <img src="../images/icprw22.jpg" width="150"/>
     </td>
     <td>
       <h3>Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras.</h3>
