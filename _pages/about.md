@@ -30,7 +30,7 @@ Publications
       <h3>Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras.</h3>
       <strong>Friedhelm Hamann</strong>, Guillermo Gallego<br/>
       <em>26th Int. Conf. Pattern Recognition (ICPR), Visual observation and analysis workshop, 2022</em><br/>
-      <a href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf">Pdf</a>
+      <a href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf"><img src="../images/Adobe_PDF_icon.svg" width="15"/> Paper</a>
     </td>
   </tr>
 </table>
