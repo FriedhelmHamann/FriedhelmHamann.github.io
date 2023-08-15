@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : #"Friedhelm Hamann"
+title                    : "Friedhelm Hamann"
 title_separator          : "-"
 name                     : &name "Friedhelm Hamann"
 description              : &description "PhD Student @ TU Berlin | Event-Based Computer Vision"
