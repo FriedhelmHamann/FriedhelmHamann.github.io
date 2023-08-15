@@ -8,6 +8,41 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+  .special-link,
+  .special-link:visited,
+  .special-link:hover,
+  .special-link:active {
+    color: inherit;
+    text-decoration: none !important;
+  }
+
+  .teaser {
+    padding-bottom: 50px;
+    width: 200px;
+  }
+
+  .collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .p-bibtex {
+    font-size: 12px;
+    margin-bottom: 0px;
+    max-width: auto;
+    text-align: left;
+  }
+
+  .paper-entry {
+    display: inline-block;
+    max-width: 100%;
+  }
+</style>
+
 I am a PhD student at the Robotic Interactive Perception lab with [Guillermo Gallego](https://sites.google.com/view/guillermogallego), at [Technical University Berlin](https://www.tu.berlin/en/). Previously, I did my master in electrical engineering at RWTH Aachen.
 
 I am working with event cameras, novel, bio-inspired vision sensors that output pixel-level brightness changes instead of standard intensity frames. My goal is to design algorithms that leverage the properties of event cameras to solve different computer vision tasks. As part of the cluster of excellence ["Science of Intelligence"](https://www.scienceofintelligence.de/) I work with biologists and neuroscientists, to build event-based tools for animal behavior observation.
