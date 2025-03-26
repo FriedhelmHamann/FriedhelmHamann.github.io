@@ -9,371 +9,418 @@ redirect_from:
 ---
 
 <style>
-    .special-link,
-    .special-link:visited,
-    .special-link:hover,
-    .special-link:active {
-      color: inherit;
-      text-decoration: none !important;
-    }
+  /* Link styles */
+  .special-link,
+  .special-link:visited,
+  .special-link:hover,
+  .special-link:active {
+    color: inherit;
+    text-decoration: none !important;
+  }
+
+  /* Base styles */
+  .teaser {
+    width: 200px;
+  }
+
+  .collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .p-bibtex {
+    font-size: 12px;
+    margin-bottom: 0px;
+    max-width: auto;
+    text-align: left;
+  }
+
+  /* Legacy styles (for backward compatibility) */
+  .paper-entry,
+  .project-entry {
+    display: inline-block;
+    max-width: 100%;
+  }
   
-    .teaser {
-      width: 200px;
-    }
-  
-    .collapsible-content {
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
-    }
-  
-    .p-bibtex {
-      font-size: 12px;
-      margin-bottom: 0px;
-      max-width: auto;
-      text-align: left;
-    }
-  
-    .paper-entry,
-    .project-entry {
-      display: inline-block;
-      max-width: 100%;
+  /* Section styles */
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  /* News section styles */
+  .news-list {
+    padding-left: 1.5rem;
+  }
+
+  .news-list li {
+    margin-bottom: 1rem;
+  }
+
+  /* Publication entry styles */
+  .publication-entry {
+    display: flex;
+    margin-bottom: 2rem;
+    clear: both;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .publication-entry:hover {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+
+  .publication-image {
+    flex: 0 0 200px;
+    margin-right: 1rem;
+  }
+
+  .publication-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .publication-content {
+    flex: 1;
+  }
+
+  .publication-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .publication-authors {
+    margin-bottom: 0.5rem;
+  }
+
+  .publication-venue {
+    font-style: italic;
+    margin-bottom: 0.8rem;
+  }
+
+  .publication-links {
+    margin-top: 0.5rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .publication-entry {
+      flex-direction: column;
     }
     
-    .publication-entry {
-      display: flex;
-      margin-bottom: 2rem;
-      clear: both;
-    }
-  
     .publication-image {
-      flex: 0 0 200px;
-      margin-right: 1rem;
+      flex: 0 0 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+      text-align: center;
     }
-  
-    .publication-content {
-      flex: 1;
+    
+    .publication-image img {
+      max-width: 200px;
     }
-  
-    .publication-title {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-    }
-  
-    .publication-authors {
-      margin-bottom: 0.5rem;
-    }
-  
-    .publication-venue {
-      font-style: italic;
-      margin-bottom: 0.8rem;
-    }
-  
-    .publication-links {
-      margin-top: 0.5rem;
-    }
-  </style>
+  }
+</style>
 
-<p>
-  I am a PhD student at the Robotic Interactive Perception Lab with 
-  <a href="https://sites.google.com/view/guillermogallego">Guillermo Gallego</a>,
-  affiliated with Technical University Berlin and the research center <a href="https://www.scienceofintelligence.de/">SCIoI</a>.
-  I also spent part of my PhD at <a href="https://www.grasp.upenn.edu/"> UPenn GRASP lab</a> with Professor <a href="https://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
-  Previously, I did my Master's in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University.
-</p>
-<p>
-  My research interests are in computer vision and robotic perception. I work on motion estimation and scene understanding of highly dynamic environments. My research projects range from fundamental motion estimation problems with event cameras to tracking and computational photography.
-</p>
+<main>
+  <section class="about">
+    <p>
+      I am a PhD student at the Robotic Interactive Perception Lab with 
+      <a href="https://sites.google.com/view/guillermogallego">Guillermo Gallego</a>,
+      affiliated with Technical University Berlin and the research center <a href="https://www.scienceofintelligence.de/">SCIoI</a>.
+      I also spent part of my PhD at <a href="https://www.grasp.upenn.edu/"> UPenn GRASP lab</a> with Professor <a href="https://www.cis.upenn.edu/~kostas/">Kostas Daniilidis</a>.
+      Previously, I did my Master's in Electrical Engineering, Information Technology, and Computer Engineering at RWTH Aachen University.
+    </p>
+    <p>
+      My research interests are in computer vision and robotic perception. I work on motion estimation and scene understanding of highly dynamic environments. My research projects range from fundamental motion estimation problems with event cameras to tracking and computational photography.
+    </p>
+  </section>
 
-<h2>News</h2>
+  <section class="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li>
+        <b>March 2025:</b> The exhibition <a href="https://www.maxgoelitz.com/en/news/110-exhibition-sindelfingen-de-die-erste-institutionelle-einzelausstellung-von-justin-urbach-eroffnet/">BLINDHAED</a> opened, showing visual installations that make use of event camera data. I was very happy to support Justin, Alex and William with the realization.
+      </li>
+      <li>
+        <b>Feb 2025:</b> 1 paper (<a href="https://arxiv.org/pdf/2412.00133">ETAP</a>) accepted at CVPR25.
+      </li>
+      <li>
+        <b>Feb 2025:</b> We started the <a href="https://www.codabench.org/competitions/5600/">SIS Challenge</a>. Results will be presented at the <a href="https://tub-rip.github.io/eventvision2025/">CVPR 25 workshop on Event-based Vision</a>.
+      </li>
+      <li>
+        <b>Oct 2024:</b> We are organizing <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html?nummer=41200&version=1&sprache=2"> a seminar this semester (WS24/25) on vision-based tracking and motion estimation</a>. Mo 10:15, MAR 2.057.
+      </li>
+    </ul>
+  </section>
 
-<ul>
-  <li>
-    <b>March 2025:</b> The exhibition <a href="https://www.maxgoelitz.com/en/news/110-exhibition-sindelfingen-de-die-erste-institutionelle-einzelausstellung-von-justin-urbach-eroffnet/">BLINDHAED</a> opened, showing visual installations that make use of event camera data. I was very happy to support Justin, Alex and William with the realization.
-  </li>
-</ul>
+  <section class="publications">
+    <h2>Publications</h2>
 
-<ul>
-  <li>
-    <b>Feb 2025:</b> 1 paper (<a href="https://arxiv.org/pdf/2412.00133">ETAP</a>) accepted at CVPR25.
-  </li>
-</ul>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/spinner_pred.gif" alt="Event-based tracking visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2412.00133" class="special-link">
+          <div class="publication-title">Event-based Tracking of Any Point with Motion-Robust Correlation Features</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Daniel Gehrig, Filbert Febryanto, Kostas Daniilidis, Guillermo Gallego</div>
+        <div class="publication-venue">IEEE Conf. Computer Vision and Pattern Recognition (CVPR), 2025</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2412.00133">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<ul>
-  <li>
-    <b>Feb 2025:</b> We started the <a href="https://www.codabench.org/competitions/5600/">SIS Challenge</a>. Results will be presented at the <a href="https://tub-rip.github.io/eventvision2025/">CVPR 25 workshop on Event-based Vision</a>.
-  </li>
-</ul>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/e2fai_teaser.png" alt="Optical flow and intensity visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2503.17262" class="special-link">
+          <div class="publication-title">Unsupervised Joint Learning of Optical Flow and Intensity with Event Cameras</div>
+        </a>
+        <div class="publication-authors">Shuang Guo, <u>Friedhelm Hamann</u>, Guillermo Gallego</div>
+        <!-- 
+        <div class="publication-venue">VENUE</div>
+        -->
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2503.17262">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn--research" href="https://github.com/tub-rip/e2fai">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<ul>
-  <li>
-    <b>Oct 2024:</b> We are organizing <a href="https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschreibung/anzeigen.html?nummer=41200&version=1&sprache=2"> a seminar this semester (WS24/25) on vision-based tracking and motion estimation</a>. Mo 10:15, MAR 2.057.
-  </li>
-</ul>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/motionpriorcm.png" alt="Motion-prior contrast maximization visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2407.10802" class="special-link">
+          <div class="publication-title">Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Ziyun Wang, Ioannis Asmanis, Kenneth Chaney, Guillermo Gallego, Kostas Daniilidis</div>
+        <div class="publication-venue">European Conference on Computer Vision (ECCV), 2024</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://github.com/tub-rip/MotionPriorCMax">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <span>Project Page</span>
+          </a>
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2407.10802">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn--research" href="https://github.com/tub-rip/MotionPriorCMax">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<h2>Publications</h2>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/mouse_sis.gif" alt="MouseSIS dataset visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2409.03358" class="special-link">
+          <div class="publication-title">MouseSIS: A Frames-and-Events Dataset for Space-Time Instance Segmentation of Mice</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Hanxiong Li, Paul Mieske, Lars Lewejohann, Guillermo Gallego</div>
+        <div class="publication-venue">ECCV Workshop on Neuromorphic Vision 2024</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://github.com/tub-rip/MouseSIS">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <span>Project Page</span>
+          </a>
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2409.03358">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn--research" href="https://github.com/tub-rip/MouseSIS">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/spinner_pred.gif" alt="Event-based tracking visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2412.00133" class="special-link">
-      <div class="publication-title">Event-based Tracking of Any Point with Motion-Robust Correlation Features</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Daniel Gehrig, Filbert Febryanto, Kostas Daniilidis, Guillermo Gallego</div>
-    <div class="publication-venue">IEEE Conf. Computer Vision and Pattern Recognition (CVPR), 2025</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2412.00133">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-    </div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/penguins.gif" alt="Penguin behavioral localization visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2312.03799.pdf" class="special-link">
+          <div class="publication-title">Low-power, Continuous Remote Behavioral Localization with Event Cameras</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Suman Ghosh, Ignacio Juarez Martinez, Tom Hart, Alex Kacelnik, Guillermo Gallego</div>
+        <div class="publication-venue">IEEE Conf. Computer Vision and Pattern Recognition (CVPR), 2024</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://tub-rip.github.io/eventpenguins/">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <span>Project Page</span>
+          </a>
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2312.03799.pdf">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn--research" href="https://github.com/tub-rip/event_penguins">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/e2fai_teaser.png" alt="Optical flow and intensity visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2503.17262" class="special-link">
-      <div class="publication-title">Unsupervised Joint Learning of Optical Flow and Intensity with Event Cameras</div>
-    </a>
-    <div class="publication-authors">Shuang Guo, <u>Friedhelm Hamann</u>, Guillermo Gallego</div>
-    <!--
-    <div class="publication-venue"> VENUE</div>
-    -->
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2503.17262">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-      <a class="btn btn--research" href="https://github.com/tub-rip/e2fai">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fab fa-github"></i>
-        </span>
-        <span>Code</span>
-      </a>
-    </div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/spectrogram_aisy24.png" alt="Fourier-based action recognition spectrogram" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2312.03799.pdf" class="special-link">
+          <div class="publication-title">Fourier‐Based Action Recognition for Wildlife Behavior Quantification with Event Cameras</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Suman Ghosh, Ignacio Juarez Martinez, Tom Hart, Alex Kacelnik, Guillermo Gallego</div>
+        <div class="publication-venue">Advanced Intelligent Systems, 2024</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2312.03799.pdf">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>      
+        </div>
+      </div>
+    </article>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/motionpriorcm.png" alt="Motion-prior contrast maximization visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2407.10802" class="special-link">
-      <div class="publication-title">Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Ziyun Wang, Ioannis Asmanis, Kenneth Chaney, Guillermo Gallego, Kostas Daniilidis</div>
-    <div class="publication-venue">European Conference on Computer Vision (ECCV), 2024</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://github.com/tub-rip/MotionPriorCMax">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fas fa-bolt"></i>
-        </span>
-        <span>Project Page</span>
-      </a>
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2407.10802">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-      <a class="btn btn--research" href="https://github.com/tub-rip/MotionPriorCMax">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fab fa-github"></i>
-        </span>
-        <span>Code</span>
-      </a>
-    </div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/continuity_cam.gif" alt="Continuous color video decompression visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://arxiv.org/pdf/2312.00113.pdf" class="special-link">
+          <div class="publication-title">Event-based Continuous Color Video Decompression from Single Frames</div>
+        </a>
+        <div class="publication-authors">Ziyun Wang, <u>Friedhelm Hamann</u>, Kenneth Chaney, Wen Jiang, Guillermo Gallego, Kostas Daniilidis</div>
+        <!-- 
+        <div class="publication-venue">VENUE</div>
+        -->
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://www.cis.upenn.edu/~ziyunw/continuity_cam/">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fas fa-bolt"></i>
+            </span>
+            <span>Project Page</span>
+          </a>
+          <a class="btn btn--research" href="https://arxiv.org/pdf/2312.00113.pdf">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/mouse_sis.gif" alt="MouseSIS dataset visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2409.03358" class="special-link">
-      <div class="publication-title">MouseSIS: A Frames-and-Events Dataset for Space-Time Instance Segmentation of Mice</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Hanxiong Li, Paul Mieske, Lars Lewejohann, Guillermo Gallego</div>
-    <div class="publication-venue">ECCV Workshop on Neuromorphic Vision 2024</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://github.com/tub-rip/MouseSIS">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fas fa-bolt"></i>
-        </span>
-        <span>Project Page</span>
-      </a>
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2409.03358">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-      <a class="btn btn--research" href="https://github.com/tub-rip/MouseSIS">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fab fa-github"></i>
-        </span>
-        <span>Code</span>
-      </a>
-    </div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/bos_teaser.png" alt="Background-Oriented Schlieren visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://doi.org/10.1109/TPAMI.2023.3328188" class="special-link">
+          <div class="publication-title">Event-based Background-Oriented Schlieren</div>
+        </a>
+        <div class="publication-authors">Shintaro Shiba, <u>Friedhelm Hamann</u>, Yoshimitsu Aoki, Guillermo Gallego</div>
+        <div class="publication-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://doi.org/10.1109/TPAMI.2023.3328188">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn--research" href="https://github.com/tub-rip/event_based_bos">
+            <span class="icon" style="margin-right: 0em;">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </div>
+      </div>
+    </article>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/penguins.gif" alt="Penguin behavioral localization visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2312.03799.pdf" class="special-link">
-      <div class="publication-title">Low-power, Continuous Remote Behavioral Localization with Event Cameras</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Suman Ghosh, Ignacio Juarez Martinez, Tom Hart, Alex Kacelnik, Guillermo Gallego</div>
-    <div class="publication-venue">IEEE Conf. Computer Vision and Pattern Recognition (CVPR), 2024</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://tub-rip.github.io/eventpenguins/">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fas fa-bolt"></i>
-        </span>
-        <span>Project Page</span>
-      </a>
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2312.03799.pdf">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-      <a class="btn btn--research" href="https://github.com/tub-rip/event_penguins">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fab fa-github"></i>
-        </span>
-        <span>Code</span>
-      </a>
-    </div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/icprw22crop.jpg" alt="Stereo co-capture system visualization" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf" class="special-link">
+          <div class="publication-title">Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras</div>
+        </a>
+        <div class="publication-authors"><u>Friedhelm Hamann</u>, Guillermo Gallego</div>
+        <div class="publication-venue">26th Int. Conf. Pattern Recognition (ICPR), Visual observation and analysis workshop, 2022</div>
+        <div class="publication-links">
+          <a class="btn btn--research" href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf">
+            <span class="icon" style="margin-right: 0em;">
+              <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
+            </span>
+            <span>Paper</span>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/spectrogram_aisy24.png" alt="Fourier-based action recognition spectrogram" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2312.03799.pdf" class="special-link">
-      <div class="publication-title">Fourier‐Based Action Recognition for Wildlife Behavior Quantification with Event Cameras</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Suman Ghosh, Ignacio Juarez Martinez, Tom Hart, Alex Kacelnik, Guillermo Gallego</div>
-    <div class="publication-venue">Advanced Intelligent Systems, 2024</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2312.03799.pdf">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>      
-    </div>
-  </div>
-</article>
+  <section class="projects">
+    <h2>Projects</h2>
 
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/continuity_cam.gif" alt="Continuous color video decompression visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://arxiv.org/pdf/2312.00113.pdf" class="special-link">
-      <div class="publication-title">Event-based Continuous Color Video Decompression from Single Frames</div>
-    </a>
-    <div class="publication-authors">Ziyun Wang, <u>Friedhelm Hamann</u>, Kenneth Chaney, Wen Jiang, Guillermo Gallego, Kostas Daniilidis</div>
-    <!-- 
-    <div class="publication-venue">VENUE</div>
-    -->
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://www.cis.up
-      <a class="btn btn--research" href="https://www.cis.upenn.edu/~ziyunw/continuity_cam/">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fas fa-bolt"></i>
-        </span>
-        <span>Project Page</span>
-      </a>
-      <a class="btn btn--research" href="https://arxiv.org/pdf/2312.00113.pdf">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-    </div>
-  </div>
-</article>
-
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/bos_teaser.png" alt="Background-Oriented Schlieren visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://doi.org/10.1109/TPAMI.2023.3328188" class="special-link">
-      <div class="publication-title">Event-based Background-Oriented Schlieren</div>
-    </a>
-    <div class="publication-authors">Shintaro Shiba, <u>Friedhelm Hamann</u>, Yoshimitsu Aoki, Guillermo Gallego</div>
-    <div class="publication-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://doi.org/10.1109/TPAMI.2023.3328188">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-      <a class="btn btn--research" href="https://github.com/tub-rip/event_based_bos">
-        <span class="icon" style="margin-right: 0em;">
-          <i class="fab fa-github"></i>
-        </span>
-        <span>Code</span>
-      </a>
-    </div>
-  </div>
-</article>
-
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/icprw22crop.jpg" alt="Stereo co-capture system visualization" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf" class="special-link">
-      <div class="publication-title">Stereo Co-capture System for Recording and Tracking Fish with Frame-and Event Cameras</div>
-    </a>
-    <div class="publication-authors"><u>Friedhelm Hamann</u>, Guillermo Gallego</div>
-    <div class="publication-venue">26th Int. Conf. Pattern Recognition (ICPR), Visual observation and analysis workshop, 2022</div>
-    <div class="publication-links">
-      <a class="btn btn--research" href="https://homepages.inf.ed.ac.uk/rbf/VAIB22PAPERS/vaib22fhgg.pdf">
-        <span class="icon" style="margin-right: 0em;">
-          <img src="../images/Adobe_PDF_icon.svg" width="15" alt="PDF icon"/>
-        </span>
-        <span>Paper</span>
-      </a>
-    </div>
-  </div>
-</article>
-
-
-<h2>Projects</h2>
-
-<article class="publication-entry">
-  <div class="publication-image">
-    <img src="../images/cocapture_example.png" alt="CoCapture system interface" class="teaser">
-  </div>
-  <div class="publication-content">
-    <a href="https://github.com/tub-rip/CoCapture" class="special-link">
-      <div class="publication-title">CoCapture</div>
-    </a>
-    <div class="publication-authors">GUI for viewing and recording with multi camera systems including event cameras.</div>
-  </div>
-</article>
+    <article class="publication-entry">
+      <div class="publication-image">
+        <img src="../images/cocapture_example.png" alt="CoCapture system interface" class="teaser">
+      </div>
+      <div class="publication-content">
+        <a href="https://github.com/tub-rip/CoCapture" class="special-link">
+          <div class="publication-title">CoCapture</div>
+        </a>
+        <div class="publication-authors">GUI for viewing and recording with multi camera systems including event cameras.</div>
+      </div>
+    </article>
+  </section>
+</main>
