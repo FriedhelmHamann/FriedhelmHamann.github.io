@@ -1,8 +1,5 @@
 # main links links
 main:
-  - title: "CV"
-    url: /files/cv_friedhelm_hamann.pdf
-    external: true
   #- title: "Publications"
   #  url: /publications/
 
